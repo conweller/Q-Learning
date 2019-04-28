@@ -1,0 +1,2 @@
+== Structure ==
+* Board: List of blocks, agent's position (doesn't need to be class)
