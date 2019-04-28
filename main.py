@@ -20,7 +20,7 @@ SP_BLOCKS = defaultdict(lambda: board.BlockTag.NORMAL, {
 B = board.Board(SP_BLOCKS)
 B.set_actions()
 
-B.run(10000)
+B.run(100000)
 
 if argv[4] == "p":
     for row in B.blocks:
@@ -31,7 +31,7 @@ if argv[4] == "p":
                 print(action.direction.char)
 
 if argv[4] == "q":
-    idx = int(argv[5])-1
-    for act in B.blocks[idx // board.COL][idx % board.COL].acts:
-        print(act.direction.char, end=" ")
+    IDX = int(argv[5])-1
+    for act in B.blocks[IDX // board.COL][IDX % board.COL].acts:
+        print(act.direction.char, end=": ")
         print(str.format('{0:.2f}', act.q_val))

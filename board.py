@@ -124,9 +124,9 @@ class Board:
         Constructor for a board object
 
         Arguments:
-            sp_blocks:  Dictionary containing block indexes as keys and the
-                corresponding BlockTag, either GOAL, FORBIDDEN, or WALL, as the
-                values.
+            sp_blocks:  Dictionary containing special block (non-normal)
+                indexes as keys and the corresponding BlockTag, either GOAL,
+                FORBIDDEN, or WALL, as the values.
 
         Returns:
             Board: The Board object created by the constructor, where each
