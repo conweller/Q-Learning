@@ -1,5 +1,6 @@
+# Author: Connor Onweller
 """
-This module contains the Board class and methods
+board.py: This module contains the Board class and methods
 """
 
 from enum import Enum

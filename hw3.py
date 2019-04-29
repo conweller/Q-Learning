@@ -1,3 +1,10 @@
+# Author: Connor Onweller
+"""
+hw3.py: This file reads command line input, executes a q-learning algorithm on
+    the Board specified by the input, and writes the results of the algorithm to
+    standard out
+"""
+
 from sys import argv
 import board
 from collections import defaultdict
