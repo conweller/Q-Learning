@@ -20,7 +20,7 @@ SP_BLOCKS = defaultdict(lambda: board.BlockTag.NORMAL, {
 B = board.Board(SP_BLOCKS)
 B.set_actions()
 
-B.run(100000)
+B.run(10000)
 
 if argv[4] == "p":
     for row in B.blocks:

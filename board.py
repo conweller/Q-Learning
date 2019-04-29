@@ -197,12 +197,13 @@ class Board:
 
     def run(self, num_iter):
         """
-        Runs num_iter iterations of q_learning.
+        Runs a maximum num_iter iterations of q_learning. Checks for two-digit
+            precision and sets epsilon to 0 when convergence is reached
 
         Arguments:
             num_iter:   The number of iterations to run
         """
         for _ in range(0, num_iter):
-            self.next()
-            # if self.next():
-            #     break
+            global epsilon
+            if self.next():
+                epsilon = 0
