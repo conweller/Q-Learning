@@ -48,7 +48,8 @@ class Direction(Enum):
     Attributes:
         char: The character representation of the direction
         index: A function for getting the index of a block after moving from
-            index (i, j) in the direction specified by the instance of the enum.
+            index (i, j) in the direction specified by the instance of the
+            enum.
     """
     UP = ("↑", lambda i, j: (i+1, j))
     DOWN = ("↓", lambda i, j: (i-1, j))
